@@ -157,8 +157,9 @@
         font-size: 2rem;
     }
 
+    /* TEXTO SOBRE MIM */
     .text-container {
-        text-align: justify;
+        text-align: left;
     }
 
     /* PROJETOS NO CELULAR */
