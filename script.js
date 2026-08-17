@@ -150,3 +150,43 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
+
+ScrollReveal().reveal("#about", {
+  distance: "50px",
+  duration: 1000,
+  easing: "ease-in-out",
+  origin: "bottom",
+  reset: false,
+});
+
+ScrollReveal().reveal("#experience", {
+  distance: "50px",
+  duration: 1000,
+  easing: "ease-in-out",
+  origin: "bottom",
+  reset: false,
+});
+
+ScrollReveal().reveal(".details-container", {
+  distance: "40px",
+  duration: 800,
+  origin: "bottom",
+  interval: 150,
+  reset: false,
+});
+
+ScrollReveal().reveal("#projects", {
+  distance: "50px",
+  duration: 1000,
+  easing: "ease-in-out",
+  origin: "bottom",
+  reset: false,
+});
+
+ScrollReveal().reveal("#contact", {
+  distance: "50px",
+  duration: 1000,
+  easing: "ease-in-out",
+  origin: "bottom",
+  reset: false,
+});
