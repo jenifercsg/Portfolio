@@ -1,401 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
-    <nav id="desktop-nav">
-        <div class="logo">Jenifer Gonçalves</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#experience">Experiência</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburguer-nav" >
-        <div class="logo">Jenifer Gonçalves</div>
-        <div class="hamburguer-menu">
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu Portfólio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Jenifer Gonçalves</div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#about" data-i18n="navAbout">Sobre</a></li>
+                    <li><a href="#experience" data-i18n="navExperience">Experiência</a></li>
+                    <li><a href="#projects" data-i18n="navProjects">Projetos</a></li>
+                    <li><a href="#contact" data-i18n="navContact">Contato</a></li>
+                </ul>
+                <div class="language-selector">
+                    <button type="button" onclick="changeLanguage('pt')" aria-label="Português">🇧🇷</button>
+                    <button type="button" onclick="changeLanguage('en')" aria-label="English">🇺🇸</button>
+                    <button type="button" onclick="changeLanguage('es')" aria-label="Español">🇪🇸</button>
+                </div>
+            </div>
+        </nav>
+        <nav id="hamburguer-nav">
+            <div class="logo">Jenifer Gonçalves</div>
+            <div class="hamburguer-menu">
             <div class="hamburguer-icon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()" >Sobre</a></li>
-                <li><a href="#experience" onclick="toggleMenu()" >Experiência</a></li>
-                <li><a href="#projects" onclick="toggleMenu()" >Projetos</a></li>
-                <li><a href="#contact" onclick="toggleMenu()" >Contato</a></li>
+                <li><a href="#about" onclick="toggleMenu()" data-i18n="navAbout">Sobre</a></li>
+                <li><a href="#experience" onclick="toggleMenu()" data-i18n="navExperience">Experiência</a></li>
+                <li><a href="#projects" onclick="toggleMenu()" data-i18n="navProjects">Projetos</a></li>
+                <li><a href="#contact" onclick="toggleMenu()" data-i18n="navContact">Contato</a></li>
+                <div class="language-selector">
+                    <button type="button" onclick="changeLanguage('pt')">🇧🇷</button>
+                    <button type="button" onclick="changeLanguage('en')">🇺🇸</button>
+                    <button type="button" onclick="changeLanguage('es')">🇪🇸</button>
+                </div>
             </div>
         </div>
     </nav>
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="jenifer Gonçalves foto de perfil"/>
+            <img src="./assets/profile-pic.png" alt="Jenifer Gonçalves foto de perfil">
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Olá, eu sou</p>
+            <p class="section__text__p1" data-i18n="profileGreeting">Olá, eu sou</p>
             <h1 class="title">Jenifer Gonçalves</h1>
-            <p class="section__text__p2">Frontend Developer</p>
+            <p class="section__text__p2" data-i18n="profileRole">Frontend Developer</p>
             <div class="btn-container">
-                <button
-                  class="btn btn-color-2"
-                  onclick="window.open('./assets/resume-curriculo.pdf')">
-                  Baixar currículo
-                </button>
-                <button
-                  class="btn btn-color-1"
-                  onclick="location.href='./#contact'">
-                  Dados de Contato
-                </button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-curriculo.pdf')" data-i18n="downloadCV">Baixar currículo</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'" data-i18n="contactButton">Dados de Contato</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" 
-                alt="Meu perfil do linkedin"
-                class="icon" 
-                onclick="location.href='https://www.linkedin.com/in/jenifer-gon%C3%A7alves-317427271/'"
-                />
-                <img src="./assets/github.png" 
-                alt="Meu perfil do GitHub"
-                class="icon" 
-                onclick="location.href='https://github.com/jenifercsg'"/>
+                <img src="./assets/linkedin.png" alt="Meu perfil do LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/jenifer-gon%C3%A7alves-317427271/'">
+                <img src="./assets/github.png" alt="Meu perfil do GitHub" class="icon" onclick="location.href='https://github.com/jenifercsg'">
             </div>
         </div>
     </section>
     <section id="about">
-      <p class="section__text__p1">Saiba mais</p>
-      <h1 class="title">Sobre mim</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experiência</h3>
-              <p>2+ anos <br />Desenvolvimento Frontend</p>
+        <p class="section__text__p1" data-i18n="aboutSmall">Saiba mais</p>
+        <h1 class="title" data-i18n="aboutTitle">Sobre mim</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic">
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Formação Acadêmica</h3>
-              <p>Análise e Desenvolvimento de Sistemas<br />
-                Universidade de Marília – UNIMAR
-              </p>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3 data-i18n="experienceCardTitle">Experiência</h3>
+                        <p><span data-i18n="yearsExperience">2+ anos</span><br><span data-i18n="frontendDevelopment">Desenvolvimento Frontend</span></p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3 data-i18n="educationTitle">Formação Acadêmica</h3>
+                        <p><span data-i18n="degree">Análise e Desenvolvimento de Sistemas</span><br>Universidade de Marília – UNIMAR</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p data-i18n="aboutText">Olá! Me chamo Jenifer Gonçalves, tenho 23 anos e sou estudante do último ano de Análise e Desenvolvimento de Sistemas na Universidade de Marília – UNIMAR. Durante minha trajetória, desenvolvi uma forte conexão com o front-end, onde encontrei minha paixão por transformar ideias em experiências visuais interativas e funcionais. Atualmente, estou em busca de uma nova oportunidade profissional. Enquanto isso, continuo investindo no meu crescimento por meio de cursos, projetos pessoais e desafios práticos, especialmente em tecnologias como HTML, CSS, JavaScript e React. Tenho facilidade para aprender, sou comprometida com o que faço e busco uma empresa onde possa evoluir profissionalmente, contribuindo com minhas habilidades e vontade de crescer.</p>
+                </div>
             </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Olá! Me chamo Jenifer Gonçalves, tenho 22 anos e sou estudante do último ano de Análise e Desenvolvimento de Sistemas na Universidade de Marília – UNIMAR. Durante minha trajetória, desenvolvi uma forte conexão com o front-end, onde encontrei minha paixão por transformar ideias em experiências visuais interativas e funcionais.
-              Atualmente, estou em busca de uma nova oportunidade profissional. Enquanto isso, continuo investindo no meu crescimento por meio de cursos, projetos pessoais e desafios práticos, especialmente em tecnologias como HTML, CSS, JavaScript e React.
-              Tenho facilidade para aprender, sou comprometida com o que faço e busco uma empresa onde possa evoluir profissionalmente, contribuindo com minhas habilidades e vontade de crescer.
-            </p>
-          </div>
         </div>
-      </div>
-      <img 
-      src="./assets/arrow.png" 
-      alt="arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#experiencia'"
-      />
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'">
     </section>
     <section id="experience">
-        <p class="section__text__p1">Explore meus</p>
-        <h1 class="title">Conhecimentos</h1>
+        <p class="section__text__p1" data-i18n="experienceSmall">Explore meus</p>
+        <h1 class="title" data-i18n="experienceTitle">Conhecimentos</h1>
         <div class="experience-datails-container">
             <div class="about-containers">
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Desenvolvedora Frontend</h2>
+                    <h2 class="experience-sub-title" data-i18n="frontendDeveloper">Desenvolvedora Frontend</h2>
                     <div class="article-container">
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Avançado</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Avançado</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>VUE.JS</h3>
-                                <p>Avançado</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>React</h3>
-                                <p>Básico</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Avançado</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>APIs REST</h3>
-                                <p>Intermediário</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Figma</h3>
-                                <p>Intermediário</p>
-                            </div>
-                        </article>
+                        <article><img src="./assets/checkmark.png" alt="experience icon" class="icon"><div><h3>HTML</h3><p data-i18n="advanced">Avançado</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="experience icon" class="icon"><div><h3>CSS</h3><p data-i18n="advanced">Avançado</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="experience icon" class="icon"><div><h3>VUE.JS</h3><p data-i18n="advanced">Avançado</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="experience icon" class="icon"><div><h3>React</h3><p data-i18n="basic">Básico</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="experience icon" class="icon"><div><h3>JavaScript</h3><p data-i18n="advanced">Avançado</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="experience icon" class="icon"><div><h3>APIs REST</h3><p data-i18n="intermediate">Intermediário</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="experience icon" class="icon"><div><h3>Figma</h3><p data-i18n="intermediate">Intermediário</p></div></article>
                     </div>
                 </div>
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Desenvolvedora Backend</h2>
+                    <h2 class="experience-sub-title" data-i18n="backendDeveloper">Desenvolvedora Backend</h2>
                     <div class="article-container">
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Python</h3>
-                                <p>Intermediário</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>C#</h3>
-                                <p>Básico</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>MySQL</h3>
-                                <p>Intermediário</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>PHP</h3>
-                                <p>Intermediário</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Cloud</h3>
-                                <p>Básico</p>
-                            </div>
-                        </article>
+                        <article><img src="./assets/checkmark.png" alt="experience icon" class="icon"><div><h3>Python</h3><p data-i18n="intermediate">Intermediário</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="experience icon" class="icon"><div><h3>C#</h3><p data-i18n="basic">Básico</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="experience icon" class="icon"><div><h3>MySQL</h3><p data-i18n="intermediate">Intermediário</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="experience icon" class="icon"><div><h3>PHP</h3><p data-i18n="intermediate">Intermediário</p></div></article>
+                        <article><img src="./assets/checkmark.png" alt="experience icon" class="icon"><div><h3>Cloud</h3><p data-i18n="basic">Básico</p></div></article>
                     </div>
                 </div>
             </div>
         </div>
-         <img 
-         src="./assets/arrow.png" 
-         alt="arrow icon"
-         class="icon arrow"
-         onclick="location.href='./#projetos'"
-         />
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Projetos em que tenho trabalhado</p>
-        <h1 class="title">Projetos</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
+    </div>
+    <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+</section>
+<section id="projects">
+    <p class="section__text__p1" data-i18n="projectsSmall">Projetos em que tenho trabalhado</p>
+    <h1 class="title" data-i18n="projectsTitle">Projetos</h1>
+<div class="experience-details-container">
+    <div class="about-containers">
+        <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+                <img src="./assets/project-1.png" alt="Project 1" class="project-img">
             </div>
-            <h2 class="experience-sub-title project-title">Projeto 1</h2>
+            <h2 class="experience-sub-title project-title" data-i18n="project1">Projeto 1</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/jenifercsg/StudioCarolMendes'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://studio-carol-mendes.vercel.app/'"
-              >
-                Abrir Projeto
-              </button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/jenifercsg/StudioCarolMendes'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://studio-carol-mendes.vercel.app/'" data-i18n="openProject">Abrir Projeto</button>
             </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Projeto 2</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/jenifercsg/ListagemRick'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://listagem-rick.vercel.app/'"
-              >
-                Abrir Projeto
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Projeto 3</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/jenifercsg/Fulltime-E-canhoto'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://fulltime-e-canhoto.vercel.app/'"
-              >
-                Abrir Projeto
-              </button>
-            </div>
-          </div>
         </div>
-      </div>
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title" data-i18n="project2">Projeto 2</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/jenifercsg/DePaula'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://depaulaservices.vercel.app/'" data-i18n="openProject">Abrir Projeto</button>
+            </div>
+        </div>
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title" data-i18n="project3">Projeto 3</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/jenifercsg/Fulltime-E-canhoto'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://fulltime-e-canhoto.vercel.app/'" data-i18n="openProject">Abrir Projeto</button>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+</section>
+<section id="contact">
+    <p class="section__text__p1" data-i18n="contactSmall">Tem uma ideia ou oportunidade?</p>
+    <h1 class="title" data-i18n="contactTitle">Vamos construir algo juntos!</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+            <p><a href="mailto:jenifer.estudosuni.com@gmail.com">jenifer.estudosuni.com@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+            <p><a href="https://www.linkedin.com/in/jenifer-gon%C3%A7alves-317427271/">Linkedin</a></p>
+        </div>
+    </div>
+</section>
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="navAbout">Sobre</a></li>
+                <li><a href="#experience" data-i18n="navExperience">Experiência</a></li>
+                <li><a href="#projects" data-i18n="navProjects">Projetos</a></li>
+                <li><a href="#contact" data-i18n="navContact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p data-i18n="copyright">© 2025 Jenifer Gonçalves. Todos os direitos reservados.</p>
+</footer>
 
-        <img 
-        src="./assets/arrow.png" 
-        alt="arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experiencia'"
-        />
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Tem uma ideia ou oportunidade?</p>
-        <h1 class="title">Vamos construir algo juntos!</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img 
-                src="./assets/email.png" 
-                alt="Email icon"
-                class="icon contact-icon email-icon"
-                />
-                <p><a href="mailto:jenifer.estudosuni.com@gmail.com">jenifer.estudosuni.com@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img 
-                src="./assets/linkedin.png" 
-                alt="linkedin icon"
-                class="icon contact-icon"
-                />
-                <p><a href="https://www.linkedin.com/in/jenifer-gon%C3%A7alves-317427271/">Linkedin</a></p>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#experience">Experiência</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>© 2025 Jenifer Gonçalves. Todos os direitos reservados.</p>
-    </footer>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
