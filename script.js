@@ -18,7 +18,7 @@ const translations = {
     educationTitle: "Formação Acadêmica",
     degree: "Análise e Desenvolvimento de Sistemas",
     aboutText:
-      "Olá! Me chamo Jenifer Gonçalves e sou formada em Análise e Desenvolvimento de Sistemas pela UNIMAR. Sou apaixonada por desenvolvimento front-end e gosto de transformar ideias em interfaces modernas, responsivas e funcionais. Tenho conhecimentos em HTML, CSS, JavaScript e Vue.js, além de experiência com projetos práticos e desenvolvimento de interfaces.Estou sempre buscando aprender novas tecnologias, aprimorar minhas habilidades e transformar desafios em soluções. Meu objetivo é crescer profissionalmente na área de tecnologia e contribuir para projetos que façam a diferença.",
+      "Olá! Me chamo Jenifer Gonçalves e sou formada em Análise e Desenvolvimento de Sistemas pela UNIMAR. Sou apaixonada por desenvolvimento front-end e gosto de transformar ideias em interfaces modernas, responsivas e funcionais. Tenho conhecimentos em HTML, CSS, JavaScript e Vue.js, além de experiência com projetos práticos e desenvolvimento de interfaces. Estou sempre buscando aprender novas tecnologias, aprimorar minhas habilidades e transformar desafios em soluções. Meu objetivo é crescer profissionalmente na área de tecnologia e contribuir para projetos que façam a diferença.",
 
     experienceSmall: "Explore meus",
     experienceTitle: "Conhecimentos",
