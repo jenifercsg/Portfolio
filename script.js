@@ -18,7 +18,7 @@ const translations = {
     educationTitle: "Formação Acadêmica",
     degree: "Análise e Desenvolvimento de Sistemas",
     aboutText:
-      "Olá! Me chamo Jenifer Gonçalves, tenho 22 anos e sou estudante do último ano de Análise e Desenvolvimento de Sistemas na Universidade de Marília – UNIMAR. Durante minha trajetória, desenvolvi uma forte conexão com o front-end, onde encontrei minha paixão por transformar ideias em experiências visuais interativas e funcionais. Atualmente, estou em busca de uma nova oportunidade profissional. Enquanto isso, continuo investindo no meu crescimento por meio de cursos, projetos pessoais e desafios práticos, especialmente em tecnologias como HTML, CSS, JavaScript e React. Tenho facilidade para aprender, sou comprometida com o que faço e busco uma empresa onde possa evoluir profissionalmente, contribuindo com minhas habilidades e vontade de crescer.",
+      "Olá! Me chamo Jenifer Gonçalves e sou formada em Análise e Desenvolvimento de Sistemas pela UNIMAR. Sou apaixonada por desenvolvimento front-end e gosto de transformar ideias em interfaces modernas, responsivas e funcionais. Tenho conhecimentos em HTML, CSS, JavaScript e Vue.js, além de experiência com projetos práticos e desenvolvimento de interfaces.Estou sempre buscando aprender novas tecnologias, aprimorar minhas habilidades e transformar desafios em soluções. Meu objetivo é crescer profissionalmente na área de tecnologia e contribuir para projetos que façam a diferença.",
 
     experienceSmall: "Explore meus",
     experienceTitle: "Conhecimentos",
@@ -60,7 +60,7 @@ const translations = {
     educationTitle: "Academic Background",
     degree: "Systems Analysis and Development",
     aboutText:
-      "Hello! My name is Jenifer Gonçalves, I am 22 years old and I am a final-year student of Systems Analysis and Development at the University of Marília – UNIMAR. Throughout my journey, I have developed a strong connection with frontend development, where I found my passion for turning ideas into interactive and functional visual experiences. I am currently looking for a new professional opportunity. In the meantime, I continue investing in my growth through courses, personal projects, and practical challenges, especially in technologies such as HTML, CSS, JavaScript, and React. I am a fast learner, committed to what I do, and looking for a company where I can grow professionally while contributing with my skills and willingness to learn.",
+      "Hello! My name is Jenifer Gonçalves, and I have a degree in Systems Analysis and Development from UNIMAR. I am passionate about front-end development and enjoy turning ideas into modern, responsive, and functional interfaces. I have knowledge of HTML, CSS, JavaScript, and Vue.js, as well as experience with practical projects and interface development. I am always looking to learn new technologies, improve my skills, and turn challenges into solutions. My goal is to grow professionally in the technology field and contribute to projects that make a difference.",
 
     experienceSmall: "Explore my",
     experienceTitle: "Skills",
@@ -102,7 +102,7 @@ const translations = {
     educationTitle: "Formación Académica",
     degree: "Análisis y Desarrollo de Sistemas",
     aboutText:
-      "¡Hola! Me llamo Jenifer Gonçalves, tengo 22 años y soy estudiante del último año de Análisis y Desarrollo de Sistemas en la Universidad de Marília – UNIMAR. A lo largo de mi trayectoria, he desarrollado una fuerte conexión con el desarrollo frontend, donde encontré mi pasión por transformar ideas en experiencias visuales interactivas y funcionales. Actualmente, estoy buscando una nueva oportunidad profesional. Mientras tanto, continúo invirtiendo en mi crecimiento a través de cursos, proyectos personales y desafíos prácticos, especialmente en tecnologías como HTML, CSS, JavaScript y React. Aprendo con facilidad, soy comprometida con lo que hago y busco una empresa donde pueda crecer profesionalmente, aportando mis habilidades y mis ganas de seguir aprendiendo.",
+      "¡Hola! Me llamo Jenifer Gonçalves y soy graduada en Análisis y Desarrollo de Sistemas por la UNIMAR. Me apasiona el desarrollo front-end y disfruto transformar ideas en interfaces modernas, responsivas y funcionales. Tengo conocimientos en HTML, CSS, JavaScript y Vue.js, además de experiencia con proyectos prácticos y desarrollo de interfaces. Siempre busco aprender nuevas tecnologías, mejorar mis habilidades y transformar los desafíos en soluciones. Mi objetivo es crecer profesionalmente en el área de tecnología y contribuir a proyectos que marquen la diferencia.",
 
     experienceSmall: "Explora mis",
     experienceTitle: "Conocimientos",
